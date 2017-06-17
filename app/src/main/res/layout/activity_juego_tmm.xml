@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorBlack"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:text="@string/tbTituloApp"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/tbNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:gravity="center"
+        android:text=""
+        android:textSize="8pt"
+        android:textColor="@color/colorWhite" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/colorBlack"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp">
+
+
+            <ImageButton
+                android:id="@+id/img_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/img_blue"
+                android:minHeight="200dp" />
+
+
+            <ImageButton
+                android:id="@+id/img_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/img_green"
+                android:minHeight="200dp"
+                android:onClick="" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:padding="0dp">
+
+            <ImageButton
+                android:id="@+id/img_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/img_red"
+                android:minHeight="200dp" />
+
+            <ImageButton
+                android:id="@+id/img_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@mipmap/img_yellow"
+                android:minHeight="200dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="left"
+            android:paddingLeft="10dp">
+
+            <ImageView
+                android:id="@+id/img_Sem"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:background="@mipmap/semrojo"
+                android:minHeight="5dp"
+                android:minWidth="5dp" />
+
+        </TableRow>
+    </TableLayout>
+
+
+
+</LinearLayout>
